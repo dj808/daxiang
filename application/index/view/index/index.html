@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<title>大象教育</title>
+		<link rel="stylesheet" href="__STATIC__/css/global.css" />
+		<link rel="stylesheet" href="__STATIC__/css/style.css" />
+		<script src="__STATIC__/js/jquery-2.1.0.js"></script>
+		<script src="__STATIC__/js/jquery.SuperSlide.2.1.3.js"></script>
+	</head>
+	<body  class="home-body bgcolorf0d44c">
+		<div class="home-body2">
+		<!--第一部分-->
+		<div class="home-top">
+			<h3 class="h3">{$act['title']}</h3>
+			<h4 class="h4">
+
+				<span>{$act['keywords']}</span>
+				<!-- <span>学得会</span>
+				<span>记得牢</span>
+				<span>考得好</span> -->
+			</h4>
+			<div class="home-top-img">
+				<img src="__STATIC__/images/home-top.png"  alt="" />
+			</div>
+		</div>
+		<!--第一部分over-->
+		<!--第二部分-->
+		<div class="home-second">
+			<div class="home-second-t">
+				活动介绍
+			</div>
+			<div class="home-second-b">
+				<h3 class="h3">{$act['title']}</h3>
+				<h4 class="h4">{$act['fu_title']}</h4>
+				<p class="p1">{$act['desc']}</p>
+				<div class="textCenter margin1">
+					<img src="__STATIC__/images/danao.png" class="MaxW100 center" alt="" />	
+				</div>
+				<div class="h-s-t-p">
+					<div class="hstp-l">
+						帮助孩子轻松做到:
+					</div>
+					<div  class="hstp-r">
+						{volist name="$action" id="a"}
+						<p>{$a}</p>
+						{/volist}	
+						<!-- <p>1天轻松记住1000个单词</p>	
+						<p>7天熟背300首唐诗</p>	
+						<p>3分钟强记52张扑克牌</p>	 -->
+					</div>
+				</div>
+				<div class="h-s-last">
+					{$act['decribe']}
+				</div>
+			</div>
+		</div>
+		<!--第二部分over-->
+		<div class="home-third marginb25">
+			<h3 class="textCenter font20">距离活动结束</h3>
+			<h3 class="" id="timer"></h3>
+			<!--时间参考JS-->
+			<div class="home-third-time">
+				<input type="hidden" id="year" value="{$act['year']}">
+				<input type="hidden" id="month" value="{$act['month']}">
+				<input type="hidden" id="day" value="{$act['day']}">
+				<div class="item">
+					<span class="span1" id="myday">30</span>
+					<span class="span2">天</span>
+				</div>
+				<div class="item">
+					<span class="span1" id="myhour">22</span>
+					<span class="span2">时间</span>
+				</div>
+				<div class="item">
+					<span class="span1" id="mymin">16</span>
+					<span class="span2">分</span>
+				</div>
+				<div class="item">
+					<span class="span1" id="mysecond">38</span>
+					<span class="span2">秒</span>
+				</div>
+			</div>
+			<!--时间参考JS-->
+		</div>
+		<!--参与人数-->
+		<div class="home-four marginb25">
+			<div>参与人数(1244人)</div>
+			<div class="all-people">
+				{volist name="user" id="u"}
+				<div class="one-people">
+					<img src="{$u['image']}" alt="" />
+					<span>{$u['name']}</span>
+				</div>
+				{/volist}
+				<!-- <div class="one-people">
+					<img src="__STATIC__/images/touxiang2.png" alt="" />
+					<span>Tim</span>
+				</div>
+				<div class="one-people">
+					<img src="__STATIC__/images/touxiang.png" alt="" />
+					<span>Tim</span>
+				</div>
+				<div class="one-people">
+					<img src="__STATIC__/images/touxiang2.png" alt="" />
+					<span>Tim</span>
+				</div>
+				<div class="one-people">
+					<img src="__STATIC__/images/touxiang.png" alt="" />
+					<span>Tim</span>
+				</div>
+				<div class="one-people">
+					<img src="__STATIC__/images/touxiang2.png" alt="" />
+					<span>Tim</span>
+				</div>
+				<div class="one-people">
+					<img src="__STATIC__/images/touxiang.png" alt="" />
+					<span>Tim</span>
+				</div>
+				<div class="one-people">
+					<img src="__STATIC__/images/touxiang2.png" alt="" />
+					<span>Tim</span>
+				</div>
+				<div class="one-people">
+					<img src="__STATIC__/images/touxiang.png" alt="" />
+					<span>Tim</span>
+				</div>
+				<div class="one-people">
+					<img src="__STATIC__/images/touxiang2.png" alt="" />
+					<span>Tim</span>
+				</div>
+				<div class="one-people">
+					<img src="__STATIC__/images/touxiang.png" alt="" />
+					<span>Tim</span>
+				</div>
+				<div class="one-people">
+					<img src="__STATIC__/images/touxiang2.png" alt="" />
+					<span>东方破是</span>
+				</div> -->
+			</div>
+		</div>
+		<!--参与人数over-->
+		<!--购买人数-->
+		<div class="home-four marginb25">
+			<div>购买人数(633人)</div>
+			<div class="picMarquee-top">
+				<div class="bd">
+					<ul class="picList gm-list">
+						<!--单条-->
+						{volist name="buyuser" id="b"}
+						<li>
+							<div class="item">
+								<div class="item-l">
+									<img src="__STATIC__/images/touxiang2.jpg" alt="" />
+									<p class="p1">
+										<span>{$b['name']}</span>
+										<span>{$b['phone']}</span>
+									</p>
+								</div>
+								<div class="item-r">
+									<p class="f3583d">已经支付￥19.9</p>
+									<p>{$b['create_time']}</p>	
+								</div>
+							</div>
+						</li>
+						{/volist}
+						<!--单条over-->
+						<!--单条-->
+						<!-- <li>
+							<div class="item">
+								<div class="item-l">
+									<img src="__STATIC__/images/touxiang2.jpg" alt="" />
+									<p class="p1">
+										<span>老蒋老蒋</span>
+										<span>135****4567</span>
+									</p>
+								</div>
+								<div class="item-r">
+									<p class="f3583d">已经支付￥19.9</p>
+									<p>2018/12/12 23:35:23</p>	
+								</div>
+							</div>
+						</li> -->
+						<!--单条over-->
+						<!--单条-->
+						<!-- <li>
+							<div class="item">
+								<div class="item-l">
+									<img src="__STATIC__/images/touxiang2.jpg" alt="" />
+									<p class="p1">
+										<span>老蒋</span>
+										<span>135****4567</span>
+									</p>
+								</div>
+								<div class="item-r">
+									<p class="f3583d">已经支付￥19.9</p>
+									<p>2018/12/12 23:35:23</p>	
+								</div>
+							</div>
+						</li> -->
+						<!--单条over-->
+						<!--单条-->
+						<!-- <li>
+							<div class="item">
+								<div class="item-l">
+									<img src="__STATIC__/images/touxiang2.jpg" alt="" />
+									<p class="p1">
+										<span>老蒋</span>
+										<span>135****4567</span>
+									</p>
+								</div>
+								<div class="item-r">
+									<p class="f3583d">已经支付￥19.9</p>
+									<p>2018/12/12 23:35:23</p>	
+								</div>
+							</div>
+						</li> -->
+						<!--单条over-->
+					</ul>
+				</div>
+			</div>
+			<script type="text/javascript">
+				jQuery(".picMarquee-top").slide({mainCell:".bd ul",autoPlay:true,effect:"topMarquee",vis:4,interTime:50});
+			</script>
+		</div>
+		<!--购买人数over-->
+		<!--线下活动-->
+		<div class="home-hd">
+			{$act['editorValue']}
+			<!-- <h3>线下活动</h3>
+			<h4>近距离了解大象超强记忆训练中心</h4>
+			<div class="img-list margin1">
+				<img src="__STATIC__/images/hd1.jpg" class="MaxW100 center margin3" alt="" />
+				<img src="__STATIC__/images/hd2.jpg" class="MaxW100 center margin3 " alt="" />
+				<img src="__STATIC__/images/hd3.jpg" class="MaxW100 center margin3" alt="" />
+				<img src="__STATIC__/images/hd4.jpg" class="MaxW100 center margin3" alt="" />
+				<img src="__STATIC__/images/hd5.jpg" class="MaxW100 center margin3" alt="" />
+				<img src="__STATIC__/images/hd6.jpg" class="MaxW100 center margin3" alt="" />
+			</div> -->
+		</div>
+		<!--线下活动over-->
+		<div class="home-zf">
+			<p class="p1">
+				相信你的朋友也会需要的吗，您的朋友购买成功后，您将获得
+				<span class="f3583d">6-66元</span>
+				的红包奖励，红包秒到您的微信零钱包
+			</p>
+			<p class="cd2d24">
+				1、海报推广--生成推广专属海报，相信您的朋友也会喜欢；
+			</p>
+			<p class="cd2d24">
+				2、点击"赚红包"成功海报分享朋友圈
+			</p>
+			<p class="cd2d24">
+				3、朋友通过您的链接购买后，您将获得6-66元红包立即到您的微信红包。
+			</p>
+			<p class="p2">有任何问题请点击左下角电话按钮联系客服</p>	
+		</div>
+		<!---->
+		<!--赚钱排行版-->
+		<div class="home-zq">
+			<div class="atixin">
+				<div class="tixin"></div>
+				<h3 class="h3">赚钱排行版</h3>	
+			</div>
+			<div class="alist">
+				<div class="item">
+					<div class="item-l">排名</div>
+					<div class="item-m">推荐数</div>
+					<div class="item-r">佣金(元)</div>
+				</div>
+				<!--开始遍历-->
+					<!--单条-->
+					{volist name="zu" id="z"}
+					<div class="item">
+						<div class="item-l">{$z['name']}</div>
+						<div class="item-m">{$z['count']}人</div>
+						<div class="item-r">
+							<span class="cd2d24">￥{$z['yongjin']}</span>
+							<span>元</span>
+						</div>
+					</div>
+					{/volist}
+					<!--单条-->
+					<!--单条-->
+					<!-- <div class="item">
+						<div class="item-l">老蒋</div>
+						<div class="item-m">59人</div>
+						<div class="item-r">
+							<span class="cd2d24">￥653.75元</span>
+							<span>元</span>
+						</div>
+					</div> -->
+					<!--单条-->
+					<!--单条-->
+					<!-- <div class="item">
+						<div class="item-l">老蒋</div>
+						<div class="item-m">59人</div>
+						<div class="item-r">
+							<span class="cd2d24">￥653.75元</span>
+							<span>元</span>
+						</div>
+					</div> -->
+					<!--单条-->
+					<!--单条-->
+					<!-- <div class="item">
+						<div class="item-l">老蒋</div>
+						<div class="item-m">59人</div>
+						<div class="item-r">
+							<span class="cd2d24">￥653.75元</span>
+							<span>元</span>
+						</div>
+					</div> -->
+					<!--单条-->
+					<!--单条-->
+					<!-- <div class="item">
+						<div class="item-l">老蒋</div>
+						<div class="item-m">59人</div>
+						<div class="item-r">
+							<span class="cd2d24">￥653.75元</span>
+							<span>元</span>
+						</div>
+					</div> -->
+					<!--单条-->
+					<!--单条-->
+					<!-- <div class="item">
+						<div class="item-l">老蒋</div>
+						<div class="item-m">59人</div>
+						<div class="item-r">
+							<span class="cd2d24">￥653.75元</span>
+							<span>元</span>
+						</div>
+					</div> -->
+					<!--单条-->
+			</div>
+		</div>
+		<!--赚钱排行版over-->
+		<!--我也要创建活动-->
+		<div class="createBtn">
+			<a href="{:url('index/enrol',array('id'=>$data_user,'actid'=>$act['id']))}">我也要创建</a>	
+		</div>
+		<!--我也要创建活动over-->
+		</div>
+		<!--立即报名-->
+		<div class="bottomBtn">
+			<div class="bottomBtn-main">
+				<div class="bottomBtn-l">
+					<a href="{:url('index/enrol',array('id'=>$data_user,'actid'=>$act['id']))}">立即报名</a>
+				</div>
+				<div class="bottomBtn-r">
+					<a href="{:url('index/share',array('id'=>$data_user))}">赚红包</a>
+				</div>	
+			</div>
+		</div>
+		<!--立即报名-->
+		<!--电话按钮-->
+		<a href="tel:13764567708" class="phoneBtn">
+			<img src="__STATIC__/images/phone.png" alt="" />
+		</a>
+		<!--电话按钮-->
+		<!--券按钮-->
+		<a href="{:url('index/coupon')}" class="quanBtn">
+			<img src="__STATIC__/images/quan.png" alt="" />
+		</a>
+		<!--电话按钮-->
+		<!--投诉按钮-->
+		<a href="javascript:;" class="touBtn">
+			<img src="__STATIC__/images/tou.png" alt="" />
+		</a>
+		<!--投诉按钮-->
+		<!--投诉按钮-->
+		<span id="musicControl">
+	        <a id="mc_play" class="on" onclick="play_music();">
+	            <audio id="musicfx" loop="loop" autoplay="autoplay">
+	                <source src="__STATIC__/mp3/music.mp3" type="audio/mpeg">
+	            </audio>
+	        </a>
+		 </span>
+		<!--投诉按钮-->
+		<script>
+			 function play_music(){
+		        if ($('#mc_play').hasClass('on')){
+		            $('#mc_play audio').get(0).pause();
+		            $('#mc_play').attr('class','stop');
+		        }else{
+		            $('#mc_play audio').get(0).play();
+		            $('#mc_play').attr('class','on');
+		        }
+		        $('#music_play_filter').hide();
+		        event.stopPropagation(); //阻止冒泡
+		    }
+		    function just_play(id){
+		        $('#mc_play audio').get(0).play();
+		        $('#mc_play').attr('class','on');
+		        if (typeof(id)!='undefined'){
+		            $('#music_play_filter').hide();
+		        }
+		        event.stopPropagation(); //阻止冒泡
+		    }
+		    function is_weixn(){
+		        return false;
+		        var ua = navigator.userAgent.toLowerCase();
+		        if(ua.match(/MicroMessenger/i)=="micromessenger") {
+		            return true;
+		        } else {
+		            return false;
+		        }
+		    }
+		    //微信判断
+//		    window.onload=function(){
+//		        if (!is_weixn()){
+//		            just_play();
+//		        }
+//		    }
+
+		  function ShowCountDown(year,month,day,sday,shour,smin,ssecond){
+	            var now = new Date();
+	            var endDate = new Date(year, month, day);
+	            var leftTime=endDate.getTime()-now.getTime();
+	            var dd = parseInt(leftTime / 1000 / 60 / 60 / 24, 10);//计算剩余的天数
+	            var hh = parseInt(leftTime / 1000 / 60 / 60 % 24, 10);//计算剩余的小时数
+	            var mm = parseInt(leftTime / 1000 / 60 % 60, 10);//计算剩余的分钟数
+	            var ss = parseInt(leftTime / 1000 % 60, 10);//计算剩余的秒数
+	            dd = checkTime(dd);
+	            hh = checkTime(hh);
+	            mm = checkTime(mm);
+	            ss = checkTime(ss);//小于10的话加0
+	            var syday = document.getElementById(sday);
+	            var syhour = document.getElementById(shour);
+	            var symin = document.getElementById(smin);
+	            var sysecond = document.getElementById(ssecond);
+	            syday.innerHTML=dd;
+	            syhour.innerHTML=hh;
+	            symin.innerHTML=mm;
+	            sysecond.innerHTML=ss;
+	           
+	        }
+	        function checkTime(i){
+	            if (i < 10) {
+	                i = "0" + i;
+	            }
+	            return i;
+	        }
+	        //只需修改 ShowCountDown 前三个  例2019 1 1
+	        var year=$('#year').val();
+	        var month=$('#month').val();
+	        var day=$('#day').val();
+       		 window.setInterval(function(){ShowCountDown(year,month,day,'myday','myhour','mymin','mysecond');}, 1000);
+			  window.load=function(){
+			  	var play_filter=document.getElementById('music_play_filter');
+			    play_filter.addEventListener('click', function(){
+			        just_play(1);
+			    });
+			    play_filter.addEventListener('touchstart', function(){
+			        just_play(1);
+			    });
+			    play_filter.addEventListener('touchend', function(){
+			        just_play(1);
+			    });
+			    play_filter.addEventListener('touchmove', function(){
+			        just_play(1);
+			    });
+			    play_filter.addEventListener('mousedown', function(){
+			        just_play(1);
+			    });
+			    play_filter.addEventListener('mouseup', function(){
+			        just_play(1);
+			    });
+			    play_filter.addEventListener('mousemove',function(){
+			        just_play(1);
+			    });
+			  }
+		</script>
+	</body>
+</html>

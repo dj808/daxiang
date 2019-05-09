@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>提现</title>
+        <script src="__STATIC__/js/jquery-2.1.0.js"></script>
+        
+    </head>
+    <body>
+    <br/>
+    <div style="width:90%;text-align:center;">您可以提现的金额为：</div><br/>
+    <div style="width:90%;text-align:center; margin-bottom:20px;"> <span style="color:red;" id="yj">{$info['yongjin']}</span>元</div>
+    <div id="op" style="display:none;">{$info['open_id']}</div>
+    <!-- <font><b>可以提现的金额为<span style="color:#f00;font-size:50px" id="yongjin">111</span>元</b></font><br/><br/> -->
+    <div align="center">
+        <button style="width:80%; height:40px; border-radius: 15px;background-color:#44b549; border:0px #44b549 solid; cursor: pointer;  color:white;  font-size:16px;" type="button" onclick="ajaxPost()" >立即提现</button>
+    </div>
+    <script>  
+              
+            function ajaxPost(){  
+                
+                var yongjin = $("#yj").text();  
+                var openid = $("#op").text();  
+                if(yongjin < 200){
+                    alert('金额达到200才可提现');
+                    return false;
+
+                }
+                $.ajax({  
+                    type:"post",  
+                    url:"{:url('Index/dotixian')}",  
+                    data:{yongjin:yongjin,openid:openid},
+                    success:function(data){ 
+                        
+                        $("#content").append(data);//获取成功以后输出返回值  
+                    }  
+                });  
+            }  
+              
+    </script>  
+    </body>
+    </html>
+

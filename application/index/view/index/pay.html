@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>确认支付</title>
+        <script type="text/javascript">
+            //调用微信JS api 支付
+            function jsApiCall()
+            {
+                WeixinJSBridge.invoke(
+                    'getBrandWCPayRequest',
+                    <?php echo $jsApiParameters; ?>,
+                    function(res){
+                        WeixinJSBridge.log(res.err_msg);
+                        location.href="http://daxiang.meyatu.com/index.php/index/index/successinfo"; 
+                        // alert(res.err_code+res.err_desc+res.err_msg);
+                    }
+                );
+            }
+            function callpay()
+            {
+                if (typeof WeixinJSBridge == "undefined"){
+                    if( document.addEventListener ){
+                        document.addEventListener('WeixinJSBridgeReady', jsApiCall, false);
+                    }else if (document.attachEvent){
+                        document.attachEvent('WeixinJSBridgeReady', jsApiCall);
+                        document.attachEvent('onWeixinJSBridgeReady', jsApiCall);
+                    }
+                }else{
+                    jsApiCall();
+                }
+            }
+        </script>
+    </head>
+    <body>
+    <br/>
+    <font><b>该笔订单支付金额为<span style="color:#f00;font-size:50px">19.9元</span>钱</b></font><br/><br/>
+    <div align="center">
+        <button style="width:80%; height:50px; border-radius: 15px;background-color:##44b549; border:0px ##44b549 solid; cursor: pointer;  color:white;  font-size:16px;" type="button" onclick="callpay()" >立即支付</button>
+    </div>
+    </body>
+    </html>
+

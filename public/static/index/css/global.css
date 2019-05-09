@@ -1,0 +1,168 @@
+@charset "UTF-8";
+/**
+ * @authors luankezhen (luankezhen@foxmail.com)
+ * @date    2013-08-18 14:49:58
+ */
+body, div, h1, h2, h3, h4, h5, h6, p, blockquote, pre, dl, dt, dd, ol, ul, li, hr, fieldset, form, label, legend, th, td, article, aside, figure, footer, header, hgroup, menu, nav, section, summary, hgroup {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-family: Verdana,"Microsoft YaHei", "SimHei", "SimSun";
+}
+body {
+
+}
+img {
+	/*max-width: 100%;*/
+	display: block;
+	border:0;
+	vertical-align:middle;
+}
+ul {
+	list-style:none;
+}
+html, body {
+	min-height: 100%;
+	background: #fff;
+}
+body {
+	font-family: Verdana;
+	-webkit-text-size-adjust: none;
+}
+/*选中后背景色*/
+::selection {color: #fff;background: #fd6114;} 
+::-moz-selection {color: #fff;background: #fd6114;}
+a {
+	/*	*/
+	text-decoration:none;
+}
+a:active, a:hover {
+	outline: 0;
+}
+.a-del {
+	color: #c00;
+}
+.a-del:hover {
+	color: #b00;
+	text-decoration: underline;
+}
+.fl {
+	float: left;
+}
+.fr {
+	float: right;
+}
+.icon-arrow-right {
+	
+}
+.fb18 {
+	font-size: 18px;
+	font-weight: bold;
+}
+.fb24 {
+	font-size: 24px;
+	font-weight: bold;
+}
+.cred {
+	color: #c00 !important;
+}
+.cblue {
+	color: #06c !important;
+}
+
+/*====IE提示====*/
+.ie8-tips {
+	width:100%;
+	padding:30px 0;
+	border-bottom:1px solid #0066cc;
+	background:#fff;
+	color:#333;
+	line-height:50px;
+	text-align:center;
+	font-size:2em;
+}
+.ie8-tips p {
+	padding:5px 0;
+}
+.ie8-tips a {
+	margin:0 1em;
+	font-size:2em;
+}
+/*=清除非IE浏览器下的浮动溢出=*/
+.wrapfix:after{	
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+.wrapfix {
+	display: inline-table;
+}
+/* Hides from IE-mac \*/
+* html .wrapfix {
+	height: 1%;
+}
+.wrapfix {
+	display: block;
+}
+
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: " ";
+}
+
+.clearfix:after {
+  clear: both;
+}
+.textCenter{
+	text-align: center;
+}
+.MaxW100{
+	max-width: 100%;
+}
+.center{
+	margin: 0 auto;
+}
+.margin1{
+	margin: 1.5% 0;
+}
+.margin3{
+	margin: 3% 0;
+}
+.marginb25{
+	margin-bottom:1.26rem;
+}
+.bgcolorf0d44c{
+	background-color:#f0d44c;
+}
+.font1rem{
+	font-size: 1rem;
+}
+.font18{
+	font-size: 1.12rem;
+}
+.font20{
+	font-size: 1.25rem;
+}
+.font22{
+	font-size:1.37rem;
+}
+.font24{
+	font-size:1.5rem;
+}
+.f3583d{
+	color: #f3583d;
+}
+.cd2d24{
+	color: #cd2d24;
+}
+.fff{
+	color: #fff;
+}
+.c8913d{
+	color: #c8913d;
+}
+/* End hide from IE-mac */
+@media (min-width:641px){body{width:640px;margin:auto;}}

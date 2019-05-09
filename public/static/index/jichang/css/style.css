@@ -1,0 +1,881 @@
+/* 首页 */
+/*body, html{*/
+	/*height: 100%;*/
+/*}*/
+html{
+	max-width:640px;
+	margin: 0 auto;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+
+html,body.body_bg{
+	min-height: 100%;
+}
+
+.body_bg{
+	padding-bottom: 0.5rem;
+	background-image: url(../img/home_bg.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.homer{
+	background: #fff;
+	border-radius: 5px;
+}
+
+#homeTab{
+	margin-top: 3rem;
+	padding-bottom: 0.25rem;
+	background-color: #fff;
+	border-radius: 5px;
+}
+
+#tabHeader{
+	padding: 0 0.5rem;
+	background-color: transparent;
+	border-bottom: 1px solid #ddd;
+}
+
+#tabHeader .aui-tab-item.aui-active{
+	color: #2674fd;
+	/*border: none;*/
+	border-bottom: 0;
+}
+.tab{
+	display: none;
+}
+
+.on{
+	display: block;
+}
+
+#tabContentHome img{
+	width: 1.5rem;
+}
+
+#tabContentHome .aui-iconfont{
+	color: #000;
+}
+
+.tabFooter .btn{
+	border-radius: 2rem;
+}
+
+.tabFooter .remind{
+	color: #fd7c26;
+}
+
+#homeNew{
+	background: #fff;
+	border-radius: 5px;
+}
+
+#homeNew .aui-list{
+	background: transparent;
+	border: none;
+}
+
+#homeNew .border-b{
+	border-bottom: 1px dashed #eee;
+}
+
+#homeNew .aui-list-item-title{
+	color: #333!important;
+}
+
+#homeNew .aui-list-item-right{
+	color: #999!important;
+}
+
+#homeFooter .home-footer-hb{
+	height: 5rem;
+	background-image: url("../img/home_footer_02.png");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+#homeFooter .home-footer-zj{
+	height: 5rem;
+	background-image: url("../img/home_footer_01.png");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+#homeFooter .home-footer-zp{
+	height: 5rem;
+	background-image: url("../img/home_footer_01.png");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+#homeFooter .home-footer-qt{
+	height: 5rem;
+	background-image: url("../img/home_footer_03.png");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+#homeFooter .home-footer-title{
+	color: #fff;
+	line-height: 2.2rem;
+}
+
+#homeFooter .home-footer-title span{
+	padding-bottom: 0.25rem;
+	border-bottom: 1px solid #fff;
+}
+
+#homeFooter .home-footer-content{
+	font-size: 0.6rem;
+	color: #fff;
+	padding-bottom: 0.25rem;
+}
+
+#homeFooter .aui-col-xs-4 img{
+	width: 60%;
+	margin: 0 auto;
+	margin-top: 1.5rem;
+
+}
+
+#homeTab .tab .aui-list{
+	border: none;
+	background: none;
+}
+
+
+/* 餐饮 */
+#cyHome01{
+	margin-top: -0.5rem;
+}
+
+#cyHome02 {
+	margin-top: -3rem;
+	background: #fff;
+	border-radius: 5px;
+}
+
+#cyHome02 .cy_title{
+	padding-top: 0.25rem;
+	text-align: center;
+	line-height: 2rem;
+}
+
+#cyHome02 .cy_time{
+	color: #666666;
+	font-size: 0.6rem;
+	text-align: center;
+	line-height: 1.5rem;
+}
+
+#cyHome02 .title-text{
+	border-bottom: #eeeeee solid 1px;
+}
+
+#cyHome02 .footer-text{
+	font-size: 0.6rem;
+	color: #666666;
+}
+
+#cyHome03{
+	padding: 0.75rem;
+	background: #fff;
+	border-radius: 5px;
+}
+
+#cyHome03 .cy_title{
+	color: #333;
+}
+
+#cyHome03 .cy_content{
+	font-size: 0.6rem;
+	color: #666666;
+	text-align: justify
+}
+
+#cyHome04{
+	background: #fff;
+	border-radius: 5px;
+}
+
+#cyHome04 .more{
+	max-width:100%;
+	margin-top: 0.2rem;
+	color: #fd7c26;
+}
+
+#cyHome04 .aui-list{
+	background:none;
+}
+
+#cyHome04 .rightHeader .aui-list-item-arrow:before{
+	border: 1px solid #fd7c26;
+	border-top: none;
+	border-right: none;
+}
+
+#cyHome04 .aui-list .aui-list-item:active{
+	background-color: #fff;
+}
+
+#cyHome04 .cy_pl{
+	color: #999;
+	margin-left: 3rem;
+	min-height: 2.2rem;
+	padding-right: 0.75rem;
+	font-size: 0.6rem;
+}
+
+#cyHome04 .cy_pl .cy_pl_02{
+	margin-top: 0.5rem;
+	min-height: 2.2rem;
+}
+
+#cyHome04 .rightFooter{
+	margin-top: 0.25rem;
+	text-align: center;
+	color: #fd7c26;
+}
+
+#cyHome04 .rightFooter img{
+	width: 1rem;
+	height: 1rem;
+	margin-right: 0.25rem;
+	display: inline-block;
+}
+#cyHome04 .footer_01{
+	width: 5rem;
+	margin: 0 auto;
+	background-image:url("../img/cy_03.png");
+	background-size: 1rem 1rem;
+	background-repeat: no-repeat;
+}
+
+#cyHome04 .footer_01_02{
+	margin-top: 0.7rem;
+	margin-left: 1rem;
+	color: #fd7c26!important;
+}
+#cyHome04 .aui-list .aui-list-item{
+	min-height: 2rem;
+}
+
+#star img{
+	display: inline-block;
+}
+
+
+/* 机场美食 */
+#cyHome02 #tabHeader{
+	padding: 0;
+}
+
+#cyHome02 .tab_cy_01 span{
+	width: 5rem;
+	height: 1rem;
+	line-height: 1rem;
+	padding-left: 1.8rem;
+	padding-top: 0.2rem;
+	padding-bottom: 0.2rem;
+	background-image:url("../img/cy_05_01.png");
+	background-repeat: no-repeat;
+	background-position-x: 0.5rem;
+	background-size: 1rem 1rem;
+}
+
+#cyHome02 .tab_cy_01.aui-active span{
+	width: 5rem;
+	height: 1rem;
+	line-height: 1rem;
+	padding-left: 1.8rem;
+	padding-top: 0.2rem;
+	padding-bottom: 0.2rem;
+	background-image:url("../img/cy_05_00.png");
+	background-repeat: no-repeat;
+	background-position-x: 0.5rem;
+	background-size: 1rem 1rem;
+}
+
+#cyHome02 .tab_cy_02 span{
+	width: 5rem;
+	height: 1rem;
+	line-height: 1rem;
+	padding-left: 1.8rem;
+	padding-top: 0.2rem;
+	padding-bottom: 0.2rem;
+	background-image:url("../img/cy_06_00.png");
+	background-repeat: no-repeat;
+	background-position-x: 0.5rem;
+	background-size: 1rem 1rem;
+}
+
+#cyHome02 .tab_cy_02.aui-active span{
+	width: 5rem;
+	height: 1rem;
+	line-height: 1rem;
+	padding-left: 1.8rem;
+	padding-top: 0.2rem;
+	padding-bottom: 0.2rem;
+	background-image:url("../img/cy_06_01.png");
+	background-repeat: no-repeat;
+	background-position-x: 0.5rem;
+	background-size: 1rem 1rem;
+}
+
+#cyHome02 .tab_cy_03 span{
+	width: 5rem;
+	height: 1rem;
+	line-height: 1rem;
+	padding-left: 1.8rem;
+	padding-top: 0.2rem;
+	padding-bottom: 0.2rem;
+	background-image:url("../img/cy_07_00.png");
+	background-repeat: no-repeat;
+	background-position-x: 0.5rem;
+	background-size: 1rem 1rem;
+
+}
+
+#cyHome02 .tab_cy_03.aui-active span{
+	width: 5rem;
+	height: 1rem;
+	line-height: 1rem;
+	padding-left: 1.8rem;
+	padding-top: 0.2rem;
+	padding-bottom: 0.2rem;
+	background-image:url("../img/cy_07_01.png");
+	background-repeat: no-repeat;
+	background-position-x: 0.5rem;
+	background-size: 1rem 1rem;
+
+}
+
+#cyHome02 #tabHeader .aui-tab-item.aui-active{
+	color: #fff;
+	background-color: #fd7c26;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+
+#swiper_01,#swiper_02,#swiper_03{
+	padding-bottom: 2rem;
+}
+
+.swiper-pagination-bullet-active{
+	background-color: #fd7c26;
+}
+
+#cyHome05 .aui-list{
+	background: transparent;
+}
+
+#cyHome05 .aui-list .aui-list-item:active{
+	background: transparent;
+}
+
+#cyHome05 .raty_img img{
+	display: inline-block;
+	width: 0.6rem;
+}
+
+#cyHome05 .aui-list-item-title{
+	width: 100%;
+}
+
+#cyHome05 .pf{
+	font-size: 0.7rem;
+	color: #fd7c26;
+}
+#cyHome05 .pf .aui-icon-right{
+	color: #fff;
+	width: 1rem;
+	height: 1rem;
+	background: #e7e7e7;
+	padding: 0.25rem;
+	margin-left: 0.5rem;
+	border-radius: 50%;
+}
+
+#cyHome05 .content-title{
+	line-height: 1.5rem;
+}
+
+/* 出发航班 */
+#HanBan .border-b{
+	border-bottom: 1px dashed #eee;
+}
+
+#HanBan .name{
+	color: #333;
+}
+
+#HanBan .hanban_list{
+	margin-top: 0.5rem;
+	text-align: center;
+	line-height: 1.5rem;
+}
+
+#HanBan .hanban_list .info_02 img{
+	width: 1rem;
+	margin: 0 auto;
+}
+
+.more{
+	text-align: center;
+}
+
+.more img{
+	width: 1.5rem;
+	margin: 0 auto;
+}
+
+/* 服务电话 */
+.fw_bg{
+	background-color: #fff;
+	background-image: url("../img/fwdh_bg.png");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+#fwdh{
+	padding-top: 1.5rem;
+	text-align: center;
+}
+
+#fwdh .border-t{
+	border-top: 4px solid #fd7c26;
+}
+
+/* 行李转盘 */
+#xlzp .aui-searchbar{
+	background: #fff;
+	border-radius: 5px;
+}
+
+#xlzp .aui-text-info{
+	color: #2674fd;
+}
+#xlzp .zp-text{
+	color: #666;
+}
+
+/* 计划航班 */
+#jhhb .a-radio{
+	display: none;
+}
+
+#jhhb .b-radio{
+	display: inline-block;
+	border:1px solid #fff;
+	width:16px;
+	height: 16px;
+	border-radius:16px;
+	vertical-align: middle;
+	margin-right: 5px;
+	position: relative;
+	margin-top: -0.2rem;
+}
+#jhhb .b-radio:before{
+	content: '';
+	font-size: 0;
+	width: 10px;
+	height: 10px;
+	background: #fff;
+	position: absolute;
+	left:50%;
+	top:50%;
+	margin-left: -5px;
+	margin-top: -5px;
+	border-radius: 10px;
+	display: none;
+}
+#jhhb .a-radio:checked~.b-radio:before{
+	display: block;
+}
+
+#jhhb .action{
+	background: #fd7c26;
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+}
+
+#jhhb .action label{
+	color: #fff;
+}
+
+#jhhb .name{
+	font-weight: bold;
+	color: #000;
+}
+
+#jhhb .border-b{
+	border-bottom: 1px dashed #eee;
+}
+
+#jhhb .weather{
+	margin-top: 1.5rem;
+}
+
+/*#jhhb .weather img,#jhhb .weather span{*/
+	/*float: right;*/
+/*}*/
+
+#jhhb .weather .btn{
+	color: #fff;
+	background: #93a3bf;
+	padding: 0 0.25rem ;
+	border-radius: 2px;
+}
+
+#jhhb .weather2{
+	margin-top: 1rem;
+}
+
+#jhhb .plan{
+	font-size: 0.9rem;
+	color: #fd7c26;
+}
+#jhhb .marks{
+	font-size: 0.6rem;
+	color: #999;
+}
+
+#jhhb .aui-btn.aui-btn-blue{
+	height: 2.2rem;
+	line-height: 2.25rem;
+	border-radius: 1.5rem;
+}
+
+/* 航站楼设施分布图 */
+.hzlsfb_bg{
+	background: #fff;
+}
+
+/* 机场交通 */
+#traffic{
+	margin-top: -2rem;
+	background-image: url("../img/luxian.png");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+#traffic .t_btn{
+	background-image: url("../img/btn/btn_01.png");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+#traffic .swiper-slide.action{
+	color: #fd7c26;
+}
+
+/* 新闻 */
+#news #tab{
+	background: #f4f4f4;
+}
+
+#news #tab .aui-tab-item.aui-active{
+	color: #2674fd;
+	border-bottom: 2px solid #fd7c26;
+}
+
+#news .aui-list .aui-list-item:active{
+	background-color:#fff;
+}
+
+#news #tabContent{
+	padding: 0.5rem 0;
+}
+
+#news #tabContent .more{
+	margin-top: 0.5rem;
+}
+
+/* 媒体看机场 */
+#news-list2 .aui-list .aui-list-item-label-icon{
+	width: 35%;
+}
+
+#news-list2 .aui-list .aui-list-item:active{
+	background-color: #fff;
+}
+
+#news-list2 .aui-list .aui-list-item-title{
+	width: 65%;
+}
+
+/* 评论 */
+#pl{
+	background-color: #fff;
+}
+
+#pl #star{
+	margin-left: 0.5rem;
+}
+
+#pl #star img{
+	width: 0.8rem;
+}
+
+#pl .aui-list .aui-list-item:active{
+	background-color: #fff;
+}
+
+#pl .border{
+	border: 1px #ededed solid;
+	border-radius: 5px;
+}
+
+#pl .dump{
+	color: #ccc;
+}
+#pl .wishContent{
+	height: 200px;
+	max-height: 150px;
+}
+#pl .upload{
+	width: 5rem;
+	height: 5rem;
+	border: 1px solid #eeee;
+	border-radius: 5px;
+	background-image: url("../img/xianji.png");
+	background-size: 3rem 2.5rem;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+#pl_01 .btn-pull{
+	border-radius: 2.5rem;
+}
+
+#pl_01 .btn-pull {
+	height: 2rem;
+	line-height: 2rem;
+	color: #ffffff;
+}
+
+/* 其他服务 */
+#qt img{
+	position: absolute;
+	z-index: 1;
+}
+
+#qt_bg {
+	position: absolute;
+	top: 0;
+}
+.aui-bar-t{
+	background: transparent;
+}
+
+#qt_header{
+	position: relative;
+}
+
+#qt_header .number{
+	float: left;
+	color: #fff;
+	font-size: 50px;
+	line-height: 70px;
+}
+#qt_header .btn{
+	color: #fff;
+	font-size: 0.7rem;
+	padding: 0 0.25rem;
+	background-color: #fd7c26 ;
+	border-radius: 5px;
+}
+
+#qt_header .text_01{
+	margin-right: 0.25rem;
+}
+
+#qt_header .text_02{
+	color: #fff;
+	margin-left: -0.5rem;
+	padding-top: 0.25rem;
+}
+
+#qt_header .rightImg img{
+	float: right;
+}
+
+#qt_header .qt_weather ul{
+	overflow: hidden;
+	/*margin-left: 0.75rem;*/
+}
+
+#qt_header .qt_weather ul li{
+	float: left;
+	font-size: 0.7rem;
+	margin-left: 0.75rem;
+}
+
+#qt_header .qt_weather ul li img{
+	max-width: 0.75rem;
+	max-height: 0.75rem;
+	display: inline-block;
+}
+
+#qt_content .sj{
+	display: inline-block;
+	width: 1rem;
+	height: 1rem;
+	vertical-align: sub;
+}
+
+#qt_content .text_span{
+	/*line-height: 1rem;*/
+	border-bottom: #fd7c26 3px solid;
+	padding-bottom: 0.75rem;
+	margin-left: 0.25rem;
+	color: #000;
+}
+
+#qt_content .content{
+	overflow: hidden;
+	background: #fff;
+}
+
+#qt_content .content .img img{
+	position: absolute;
+	margin: auto;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+#qt_content .title{
+	color: #212121;
+}
+
+/* 全部评论 */
+#pl_all .aui-list .aui-list-item:active{
+	background: #fff;
+}
+
+#pl_all .start_img img{
+	display: inline-block;
+	width: 0.7rem;
+}
+
+#pl_all .cy_pl{
+	color: #999;
+	margin-left: 3rem;
+	min-height: 2.2rem;
+	padding-right: 0.75rem;
+	font-size: 0.6rem;
+}
+
+#pl_all .cy_pl .cy_pl_02{
+	margin-top: 0.5rem;
+	min-height: 2.2rem;
+}
+
+/* 失物认领 */
+#found .aui-list{
+	background-color: transparent;
+}
+
+#found .input_text .aui-list .aui-list-item{
+	padding-left: 0.75rem;
+	padding-right: 1.5rem;
+}
+
+#found .input_text .aui-list .aui-list-item-input{
+	padding-right: 0;
+}
+
+#found .aui-list li:active{
+	background: transparent;
+}
+
+#found .aui-list li{
+	border: none;
+}
+
+#found .found_time{
+	border-bottom: #000 solid 1px;
+}
+
+#found .found_img{
+	width: 1.5rem;
+}
+
+#found .found_input{
+	color: #999;
+	height: auto;
+}
+
+#found .found_search{
+	float: right;
+	width: 1rem;
+}
+
+#tab_01 table{
+	width: 100%;
+}
+
+#tab_01 .tab_header{
+	color: #fff;
+	height: 2rem;
+	text-align: center;
+	line-height: 2rem;
+	background: #fd7c26;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+#tab_01 .tab_body{
+	text-align: center;
+}
+
+#tab_01 .tab_body .aui-row{
+	font-size: 14px;
+	color: #333;
+	height: 2rem;
+	border-bottom: #eee 1px solid;
+	line-height: 2rem;
+}
+
+#tab_01 .tab_body .aui-row:nth-child(odd){
+	background: #fff;
+}
+
+#tab_01 .tab_body .aui-row:nth-child(even){
+	background: #fefaef;
+}
+
+
+/* 我的航班 */
+#jhhb .my_hb{
+	text-align: center;
+}
+
+#jhhb .my_hb .b-radio:before{
+	background:#2674fd
+}
+
+#jhhb .my_hb .b-radio{
+	border: 1px solid #cccccc;
+	background: #ccc;
+}
+
+#jhhb .my_hb .b-radio{
+	font-size: 0.7rem;
+}
+
+
+/* 通用 */
+.close a{
+	overflow: hidden;
+}
+
+.close img{
+	width: 0.75rem;
+	height: 0.75rem;
+	float: right;
+}

@@ -1,0 +1,23 @@
+
+<td>{$vo.id}</td>
+<td>{$vo.title}</td>
+<td>{$vo.fu_title}</td>
+<td>{$vo.keywords}</td>
+<td>{$vo.desc}</td>
+<td><img src="{$vo['image']}" style="width:50px;height:50px;"></td>
+
+<td>{$vo.action}</td>
+<td>{$vo.decribe}</td>
+<td>{$vo.end_time}</td>
+
+<td>{$vo.create_time}</td>
+<td>
+{if condition="$vo['status'] eq 1"}
+正常
+{else /}
+已到期
+{/if}
+</td>
+
+
+
